@@ -2,7 +2,7 @@
 
 /* SCRIPT FOR VERIFYING EXECUTION OF CRONJOBS ~ TEBEL.SG */
 
-$result = ""; date_default_timezone_set('Asia/Singapore');
+$result = ""; date_default_timezone_set('Asia/Singapore'); // use following per job to check if job log file is updated
 if (date('Y-m-d') !== date('Y-m-d',filemtime("/full_path_on_your_server/weather.log"))) $result = $result . "Weather_API, ";
 
 if ($result == "")
