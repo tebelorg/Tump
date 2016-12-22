@@ -61,15 +61,15 @@ casper.then(function() {
 this.capture(snap_image());}
 {this.echo('enter signin-email | user@gmail.com');
 casper.waitFor(function check() {return check_tx('signin-email');},
-function then() {this.sendKeys(tx('signin-email’),’user@gmail.com');},
+function then() {this.sendKeys(tx('signin-email'),'user@gmail.com');},
 function timeout() {this.echo('ERROR - cannot find signin-email').exit();});}});
 
 casper.then(function() {
 {this.echo('snap page');
 this.capture(snap_image());}
-{this.echo('enter signin-password | 12345678’);
+{this.echo('enter signin-password | 12345678');
 casper.waitFor(function check() {return check_tx('signin-password');},
-function then() {this.sendKeys(tx('signin-password’),’12345678’);},
+function then() {this.sendKeys(tx('signin-password'),'12345678');},
 function timeout() {this.echo('ERROR - cannot find signin-password').exit();});}});
 
 casper.then(function() {
