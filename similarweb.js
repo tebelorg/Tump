@@ -47,4 +47,5 @@ casper.waitForSelector(x('(//*[contains(@class,"engagementInfo-value")])[4]'), f
         this.echo(sStatistics);
         var fs = require('fs'); fs.write('similarweb.csv', sStatistics + "\n", 'a');
 });
+
 casper.run();
