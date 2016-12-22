@@ -1,0 +1,316 @@
+
+START - automation started - Thu Dec 22 2016 02:11:38 GMT+0800 (SGT) 
+https://twitter.com - Twitter. It's what's happening.
+ 
+snap page 
+enter signin-email | user@gmail.com 
+snap page 
+enter signin-password | 12345678 
+snap page 
+click btn primary-btn flex-table-btn js-submit 
+snap page 
+click Icon Icon--dm Icon--large 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+snap page 
+wait 500 
+click (//*[@class="DMInbox-conversationItem"]//*[@class="DMInboxItem-snippet "])[1] 
+snap page 
+wait 500 
+click //*[@class="DMActivity-toolbar"]//*[@class="Icon Icon--dots"] 
+snap page 
+wait 500 
+click Leave conversation 
+snap page 
+wait 500 
+click DMDeleteConversation-confirm caution-btn 
+
+https://twitter.com/ - Twitter 
+FINISH - automation finished - 116.4s
+ 
