@@ -1,2 +1,2 @@
 # TA.Dump
-TA.Test is a dummy repository for experimenting with random stuff
+TA.Dump is a dummy repository for experimenting with random stuff
