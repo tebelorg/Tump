@@ -1,4 +1,5 @@
 /* SCRIPT FOR RETRIEVING SIMILARWEB INFO ~ TEBEL.SG */
+
 var casper = require('casper').create({
 	verbose: false,
 	logLevel: 'debug',
