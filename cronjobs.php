@@ -19,6 +19,7 @@ else
 
 /* SENDMAIL SERVICE */
 function sendmail_service() { // call mailer REST API to send email
+	$_GET['APIKEY'] = "random_long_string_mailer_api_key";
         ob_start(); include('/full_path_on_your_server/mailer.php');
         $php_result = ob_get_contents(); ob_end_clean(); echo $php_result;
 }
