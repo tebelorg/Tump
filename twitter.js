@@ -1,4 +1,4 @@
-/* OUTPUT CASPERJS SCRIPT FOR TA.GUI FRAMEWORK ~ TEBEL.SG */
+/* OUTPUT CASPERJS SCRIPT FOR TAGUI FRAMEWORK ~ TEBEL.SG */
 
 // casperjs (phantomjs) browser settings
 var x = require('casper').selectXPath;
