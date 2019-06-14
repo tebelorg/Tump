@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="95678870-0109-4DA9-80BC-CCFDDBBBC500">
+    <Notes>
+        <Note ID="17" FontSize="9.0" Position="231.0,111.0" Width="116.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>1. init() is called to open a background TagUI process in live mode and establish I/O channel through CLI</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="0" FontSize="12.0" Position="160.0,226.0" Width="126.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>0.117647 0.509804 0.788235</TextColor>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>1.0 1.0 1.0</Fill>
+            </Appearance>
+            <String>TagUI for Python</String>
+            <ConnectedNoteIDs>3-5, 9, 11</ConnectedNoteIDs>
+            <PointsToNoteIDs>3-5</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,16</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="420.0,227.0" Width="129.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>0.117647 0.509804 0.788235</TextColor>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>1.0 1.0 1.0</Fill>
+            </Appearance>
+            <String>TagUI’s Live Mode</String>
+            <ConnectedNoteIDs>3-5, 9, 11</ConnectedNoteIDs>
+            <PointsToNoteIDs>9, 11</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,17</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="346.0,140.0" Width="51.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.117647 0.509804 0.788235</Fill>
+            </Appearance>
+            <String>1. init()</String>
+            <ConnectedNoteIDs>0, 2, 7</ConnectedNoteIDs>
+            <PointsToNoteIDs>2, 7</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="326.0,227.0" Width="58.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.117647 0.509804 0.788235</Fill>
+            </Appearance>
+            <String>3. send()</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+            <PointsToNoteIDs>2</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="334.0,184.0" Width="61.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.117647 0.509804 0.788235</Fill>
+            </Appearance>
+            <String>6. close()</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+            <PointsToNoteIDs>2</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="352.0,97.0" Width="62.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.117647 0.509804 0.788235</Fill>
+            </Appearance>
+            <String>2. setup()</String>
+            <ConnectedNoteIDs>3</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="284.0,273.0" Width="97.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.505366 0.107977 0.507487</Fill>
+            </Appearance>
+            <String>4. _tagui_read()</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,16</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="262.0,330.0" Width="109.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.505366 0.107977 0.507487</Fill>
+            </Appearance>
+            <String>5. _tagui_output()</String>
+            <ConnectedNoteIDs>0, 2</ConnectedNoteIDs>
+            <PointsToNoteIDs>0</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,18</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="12" FontSize="9.0" Position="143.0,240.0" Width="31.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 1.0 1.0</TextColor>
+                <Fill>0.314662 0.314653 0.314658</Fill>
+            </Appearance>
+            <String>v1.1  </String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,6</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="14" FontSize="9.0" Position="469.0,149.0" Width="164.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>TagUI converts automation workflows in 21 human languages into JavaScript code that drives UI interactions. It has a CLI live mode where instructions can be typed in on the spot and acted on the UI for immediate feedback.</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="15" FontSize="9.0" Position="62.0,156.0" Width="168.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <TextColor>0.0 0.0 0.0</TextColor>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>TagUI for Python uses TagUI in live mode to send instructions from Python environment to it. Besides instructions being acted on the UI, data is retrieved back to Python environment for use.</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,16</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="16" FontSize="9.0" Position="62.0,264.0" Width="182.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>Overview - Besides mapping of functions in Python to TagUI instructions and creating a robust communication channel between the 2 apps, much of the code is for error-handling / feedback, automating TagUI setup and auto-clearing potential setup roadblocks on Linux, Windows, macOS.</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,11</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="18" FontSize="9.0" Position="424.0,84.0" Width="155.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>2. setup() is auto-called by init() if TagUI has not been downloaded and setup. It downloads and sets up the correct TagUI installation for OS.</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="21" FontSize="9.0" Position="465.0,263.0" Width="148.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>3. send() is used to send TagUI instructions to TagUI live mode</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="23" FontSize="9.0" Position="433.0,291.0" Width="156.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>4. _tagui_read() is used internally to retrieve stdout from TagUI live mode</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,16</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="24" FontSize="9.0" Position="405.0,319.0" Width="156.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>5. _tagui_output() is used internally to retrieve data output from TagUI</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,18</FormatRange>
+            </Formatting>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>4-5, 7, 9, 11-12</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="9B26D1CE-68B7-4DCF-9A59-BBBE4B01A103" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="C062FF34-C1FC-4FBA-9B6F-B5712DE06BC3" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="58CFB2A8-A312-440D-972E-A1A0303DEFDD" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="1F018AF7-6A05-4EDE-B228-ACBBC1454093" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.993495 0.701207 0.732587</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="25D551DA-FCB8-4106-987D-8E5242049092" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="D024D34A-B3EF-4FD2-9373-B97FB719443E" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="9644AE99-9730-4486-B369-DDFA1973C670" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999767 0.98837 0.949907</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+    </UISettings>
+    <PrintSettings PaperSize="595.200012,841.799988" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
