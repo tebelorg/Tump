@@ -204,6 +204,17 @@
                 <FormatRange Bold="Yes">0,18</FormatRange>
             </Formatting>
         </Note>
+        <Note ID="25" FontSize="12.0" Position="69.371277,92.251183" Width="142.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>0.0 0.0 0.0</TextColor>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>Architecture Diagram</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,20</FormatRange>
+            </Formatting>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
     <AutoFit>4-5, 7, 9, 11-12</AutoFit>
