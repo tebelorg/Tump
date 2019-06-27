@@ -50,7 +50,7 @@ while true; do
 done
 
 while true; do
-    tagui_process_id="$(ps -x | grep /tagui/src | grep -v 'grep /tagui/src'| sed -e 's/^[ ]*//' | cut -d' ' -f 1 | sort -nur | head -n 1)"
+    tagui_process_id="$(ps -x | grep tagui/src | grep -v 'grep tagui/src'| sed -e 's/^[ ]*//' | cut -d' ' -f 1 | sort -nur | head -n 1)"
     if [ -n "$tagui_process_id" ]; then
         kill $tagui_process_id > /dev/null 2>&1
     else
