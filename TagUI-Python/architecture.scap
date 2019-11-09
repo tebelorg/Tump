@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ScappleDocument Version="1.1" ID="95678870-0109-4DA9-80BC-CCFDDBBBC500">
     <Notes>
-        <Note ID="17" FontSize="9.0" Position="231.0,111.0" Width="116.0">
+        <Note ID="17" FontSize="9.0" Position="263.0,83.0" Width="116.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -11,7 +11,7 @@
                 <FormatRange Bold="Yes">0,9</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="0" FontSize="12.0" Position="160.0,226.0" Width="126.0">
+        <Note ID="0" FontSize="12.0" Position="155.0,226.0" Width="131.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>0.117647 0.509804 0.788235</TextColor>
@@ -19,8 +19,8 @@
                 <Fill>1.0 1.0 1.0</Fill>
             </Appearance>
             <String>TagUI for Python</String>
-            <ConnectedNoteIDs>3-5, 9, 11</ConnectedNoteIDs>
-            <PointsToNoteIDs>3-5</PointsToNoteIDs>
+            <ConnectedNoteIDs>3-5, 9, 11, 26</ConnectedNoteIDs>
+            <PointsToNoteIDs>3-5, 26</PointsToNoteIDs>
             <Formatting>
                 <FormatRange Bold="Yes">0,16</FormatRange>
             </Formatting>
@@ -81,7 +81,7 @@
                 <FormatRange Bold="Yes">0,10</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="7" FontSize="12.0" Position="352.0,97.0" Width="62.0">
+        <Note ID="7" FontSize="12.0" Position="402.0,97.0" Width="62.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 0.999974 0.999991</TextColor>
@@ -122,15 +122,15 @@
                 <FormatRange Bold="Yes">0,18</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="12" FontSize="9.0" Position="143.0,240.0" Width="31.0">
+        <Note ID="12" FontSize="9.0" Position="140.0,239.0" Width="31.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 1.0 1.0</TextColor>
                 <Fill>0.314662 0.314653 0.314658</Fill>
             </Appearance>
-            <String>v1.1  </String>
+            <String>v1.14</String>
             <Formatting>
-                <FormatRange Bold="Yes">0,6</FormatRange>
+                <FormatRange Bold="Yes">0,5</FormatRange>
             </Formatting>
         </Note>
         <Note ID="14" FontSize="9.0" Position="469.0,149.0" Width="164.0">
@@ -138,12 +138,12 @@
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
             </Appearance>
-            <String>TagUI converts automation workflows in 21 human languages into JavaScript code that drives UI interactions. It has a CLI live mode where instructions can be typed in on the spot and acted on the UI for immediate feedback.</String>
+            <String>TagUI converts automation workflows in 21 human languages into JavaScript code that drives UI interactions. It has a CLI live mode where instructions can be entered on the spot and acted on the UI for immediate feedback.</String>
             <Formatting>
                 <FormatRange Bold="Yes">0,5</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="15" FontSize="9.0" Position="62.0,156.0" Width="168.0">
+        <Note ID="15" FontSize="9.0" Position="62.0,131.0" Width="138.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <TextColor>0.0 0.0 0.0</TextColor>
@@ -159,12 +159,12 @@
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
             </Appearance>
-            <String>Overview - Besides mapping of functions in Python to TagUI instructions and creating a robust communication channel between the 2 apps, much of the code is for error-handling / feedback, automating TagUI setup and auto-clearing potential setup roadblocks on Linux, Windows, macOS.</String>
+            <String>Overview - Besides mapping of functions in Python to TagUI instructions and creating a robust communication channel between the 2 apps, much of the code is for error-handling &amp; feedback for users, automating TagUI setup and clearing potential setup blockers on Linux, Windows, macOS.</String>
             <Formatting>
                 <FormatRange Bold="Yes">0,11</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="18" FontSize="9.0" Position="424.0,84.0" Width="155.0">
+        <Note ID="18" FontSize="9.0" Position="471.0,82.0" Width="155.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -184,7 +184,7 @@
                 <FormatRange Bold="Yes">0,9</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="23" FontSize="9.0" Position="433.0,291.0" Width="156.0">
+        <Note ID="23" FontSize="9.0" Position="441.0,292.0" Width="156.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -194,7 +194,7 @@
                 <FormatRange Bold="Yes">0,16</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="24" FontSize="9.0" Position="405.0,319.0" Width="156.0">
+        <Note ID="24" FontSize="9.0" Position="420.0,323.0" Width="156.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -204,7 +204,7 @@
                 <FormatRange Bold="Yes">0,18</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="25" FontSize="12.0" Position="69.371277,92.251183" Width="142.0">
+        <Note ID="25" FontSize="12.0" Position="69.0,92.0" Width="142.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>0.0 0.0 0.0</TextColor>
@@ -215,9 +215,32 @@
                 <FormatRange Bold="Yes">0,20</FormatRange>
             </Formatting>
         </Note>
+        <Note ID="26" FontSize="12.0" Position="222.0,174.0" Width="44.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <TextColor>1.0 0.999974 0.999991</TextColor>
+                <Border Style="Square"></Border>
+                <Fill>0.117647 0.509804 0.788235</Fill>
+            </Appearance>
+            <String>pack()</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,6</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="27" FontSize="9.0" Position="208.0,140.0" Width="114.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Style="Square"></Border>
+            </Appearance>
+            <String>pack() is for deployment and usage without internet</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,6</FormatRange>
+            </Formatting>
+        </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>4-5, 7, 9, 11-12</AutoFit>
+    <AutoFit>4-5, 7, 9, 11-12, 26</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="9B26D1CE-68B7-4DCF-9A59-BBBE4B01A103" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
