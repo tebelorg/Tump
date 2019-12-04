@@ -164,27 +164,27 @@
                 <FormatRange Bold="Yes">0,11</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="18" FontSize="9.0" Position="471.0,82.0" Width="155.0">
+        <Note ID="18" FontSize="9.0" Position="469.31839,71.272339" Width="161.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
             </Appearance>
-            <String>2. setup() is auto-called by init() if TagUI has not been downloaded and setup. It downloads and sets up the correct TagUI installation for OS.</String>
+            <String>2. setup() is auto-called by init() if TagUI has not been downloaded and setup. It downloads and sets up the correct TagUI installation for the OS. setup() not listed in API because it is not likely to be invoked by users.</String>
             <Formatting>
                 <FormatRange Bold="Yes">0,10</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="21" FontSize="9.0" Position="465.0,263.0" Width="148.0">
+        <Note ID="21" FontSize="9.0" Position="459.3909,256.094635" Width="182.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
             </Appearance>
-            <String>3. send() is used to send TagUI instructions to TagUI live mode</String>
+            <String>3. send() is used to send TagUI instructions to TagUI live mode. send() not listed in API because it is not likely to be used by users.</String>
             <Formatting>
                 <FormatRange Bold="Yes">0,9</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="23" FontSize="9.0" Position="441.0,292.0" Width="156.0">
+        <Note ID="23" FontSize="9.0" Position="438.237976,296.698578" Width="156.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -194,7 +194,7 @@
                 <FormatRange Bold="Yes">0,16</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="24" FontSize="9.0" Position="420.0,323.0" Width="156.0">
+        <Note ID="24" FontSize="9.0" Position="415.957703,326.970917" Width="156.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -240,6 +240,9 @@
         </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
+    <Stacks>
+        <Stack>18, 14</Stack>
+    </Stacks>
     <AutoFit>4-5, 7, 9, 11-12, 26</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="9B26D1CE-68B7-4DCF-9A59-BBBE4B01A103" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
