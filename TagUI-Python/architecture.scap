@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ScappleDocument Version="1.1" ID="95678870-0109-4DA9-80BC-CCFDDBBBC500">
     <Notes>
-        <Note ID="17" FontSize="9.0" Position="267.949768,79.130112" Width="116.0">
+        <Note ID="17" FontSize="9.0" Position="268.0,79.0" Width="116.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -11,18 +11,18 @@
                 <FormatRange Bold="Yes">0,9</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="0" FontSize="12.0" Position="155.0,226.0" Width="131.0">
+        <Note ID="0" FontSize="12.0" Position="165.5,226.0" Width="113.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>0.117647 0.509804 0.788235</TextColor>
                 <Border Weight="1" Style="Square"></Border>
                 <Fill>1.0 1.0 1.0</Fill>
             </Appearance>
-            <String>TagUI for Python</String>
+            <String>RPA for Python     </String>
             <ConnectedNoteIDs>3-5, 9, 11, 26, 28</ConnectedNoteIDs>
             <PointsToNoteIDs>3-5, 26, 28</PointsToNoteIDs>
             <Formatting>
-                <FormatRange Bold="Yes">0,16</FormatRange>
+                <FormatRange Bold="Yes">0,19</FormatRange>
             </Formatting>
         </Note>
         <Note ID="2" FontSize="12.0" Position="420.0,227.0" Width="129.0">
@@ -94,7 +94,7 @@
                 <FormatRange Bold="Yes">0,10</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="9" FontSize="12.0" Position="289.434174,272.1539" Width="97.0">
+        <Note ID="9" FontSize="12.0" Position="289.0,272.0" Width="97.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 0.999974 0.999991</TextColor>
@@ -108,7 +108,7 @@
                 <FormatRange Bold="Yes">0,16</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="11" FontSize="12.0" Position="273.728638,336.34845" Width="109.0">
+        <Note ID="11" FontSize="12.0" Position="274.0,336.0" Width="109.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 0.999974 0.999991</TextColor>
@@ -122,18 +122,18 @@
                 <FormatRange Bold="Yes">0,18</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="12" FontSize="9.0" Position="140.0,239.0" Width="31.0">
+        <Note ID="12" FontSize="9.0" Position="145.663879,238.546524" Width="31.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 1.0 1.0</TextColor>
                 <Fill>0.314662 0.314653 0.314658</Fill>
             </Appearance>
-            <String>v1.20</String>
+            <String>v1.23</String>
             <Formatting>
                 <FormatRange Bold="Yes">0,5</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="14" FontSize="9.0" Position="481.299744,149.444748" Width="164.0">
+        <Note ID="14" FontSize="9.0" Position="481.0,149.0" Width="164.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -143,18 +143,18 @@
                 <FormatRange Bold="Yes">0,5</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="15" FontSize="9.0" Position="51.841911,147.674789" Width="138.0">
+        <Note ID="15" FontSize="9.0" Position="52.0,148.0" Width="138.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <TextColor>0.0 0.0 0.0</TextColor>
                 <Border Style="Square"></Border>
             </Appearance>
-            <String>TagUI for Python uses TagUI in live mode to send instructions from Python environment to it. Besides instructions being acted on the UI, data is retrieved back to Python environment for use.</String>
+            <String>RPA for Python uses TagUI in live mode to send instructions from Python environment to it. Besides instructions being acted on the UI, data is retrieved back to Python environment for use.</String>
             <Formatting>
-                <FormatRange Bold="Yes">0,16</FormatRange>
+                <FormatRange Bold="Yes">0,14</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="16" FontSize="9.0" Position="56.664207,272.170746" Width="182.0">
+        <Note ID="16" FontSize="9.0" Position="57.0,272.0" Width="182.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -205,7 +205,7 @@
                 <FormatRange Bold="Yes">78,10</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="25" FontSize="12.0" Position="57.992069,68.725143" Width="142.0">
+        <Note ID="25" FontSize="12.0" Position="58.0,69.0" Width="142.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>0.0 0.0 0.0</TextColor>
@@ -216,7 +216,7 @@
                 <FormatRange Bold="Yes">0,20</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="26" FontSize="12.0" Position="228.706512,173.19455" Width="44.0">
+        <Note ID="26" FontSize="12.0" Position="229.0,173.0" Width="44.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 0.999974 0.999991</TextColor>
@@ -229,7 +229,7 @@
                 <FormatRange Bold="Yes">0,6</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="27" FontSize="9.0" Position="215.25647,140.361679" Width="114.0">
+        <Note ID="27" FontSize="9.0" Position="215.0,140.0" Width="114.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -239,7 +239,7 @@
                 <FormatRange Bold="Yes">0,6</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="28" FontSize="12.0" Position="178.22641,111.461601" Width="56.0">
+        <Note ID="28" FontSize="12.0" Position="178.0,111.0" Width="56.0">
             <Appearance>
                 <Alignment>Center</Alignment>
                 <TextColor>1.0 0.999974 0.999991</TextColor>
@@ -252,7 +252,7 @@
                 <FormatRange Bold="Yes">0,8</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="29" FontSize="9.0" Position="69.223763,106.924858" Width="108.0">
+        <Note ID="29" FontSize="9.0" Position="69.0,107.0" Width="108.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Border Style="Square"></Border>
@@ -264,7 +264,7 @@
         </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>4-5, 7, 9, 11-12, 26, 28</AutoFit>
+    <AutoFit>0, 4-5, 7, 9, 11-12, 26, 28</AutoFit>
     <NoteStyles>
         <Style Name="Bubble (Blue)" ID="9B26D1CE-68B7-4DCF-9A59-BBBE4B01A103" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
