@@ -8,7 +8,7 @@ rem enable windows for loop advanced flow control
 setlocal enableextensions enabledelayedexpansion
 
 if "%~1"=="" (
-echo tagui v5.11: use following options and this syntax to run - tagui flow_filename option^(s^)
+echo tagui v5.13: use following options and this syntax to run - tagui flow_filename option^(s^)
 echo.
 echo chrome   - run on visible Chrome web browser instead of invisible PhantomJS ^(first install Chrome^)
 echo headless - run on invisible Chrome web browser instead of default PhantomJS ^(first install Chrome^)
@@ -672,6 +672,13 @@ if exist "tagui_no_logging" (
 	if exist "%flow_file%.raw" del "%flow_file%.raw"
 	if exist "%flow_file%.log" del "%flow_file%.log" 
 	if exist "%flow_file%.js" del "%flow_file%.js"
+)
+
+rem hack chrome to prevent ended unexpectedly message
+set "chrome_pref=%LOCALAPPDATA%\Google\Chrome\User Data\Default"
+if exist "%chrome_pref%" (
+	gawk "sub(\"\\\"exited_cleanly\\\":false\", \"\\\"exited_cleanly\\\":true\")" "%chrome_pref%" > "%chrome_pref%" > nul 2>&1
+	gawk "sub(\"\\\"exit_type\\\":\\\"Crashed\\\"\", \"\\\"exit_type\\\":\\\"Normal\\\"\")" "%chrome_pref%" > "%chrome_pref%" > nul 2>&1
 )
 
 rem change back to initial directory where tagui is called
