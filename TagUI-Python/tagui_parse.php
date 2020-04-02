@@ -32,7 +32,7 @@ if (@count($repo_data[$repo_count]) == 1) $repo_count-=1;} //-1 for EOF (Windows
 $local_repo_location = str_replace("\\","/",dirname($script)) . '/tagui_local.csv';
 if (file_exists($local_repo_location)) { // load local repository file if it exists for objects and keywords
 $local_repo_file = fopen($local_repo_location,'r') or die("ERROR - cannot open " . 'tagui_local.csv' . "\n");
-if ($repo_count != 0) $repo_count++; fgetcsv($local_repo_file); // +1 if array has data, discard header record
+if ($repo_count != 0) {$repo_count++; fgetcsv($local_repo_file);} // +1 if array has data, discard header record
 while (!feof($local_repo_file)) {$repo_data[$repo_count] = fgetcsv($local_repo_file);
 if (@count($repo_data[$repo_count]) == 0) die("ERROR - empty row found in " . 'tagui_local.csv' . "\n");
 if (@count($repo_data[$repo_count]) != 1) // pad the empty columns when local repository is used with datatable
@@ -41,7 +41,7 @@ $repo_count++;} fclose($local_repo_file); $repo_count-=1; if (@count($repo_data[
 
 if (file_exists('tagui_global.csv')) { // load global repository file if it exists for objects and keywords
 $global_repo_file = fopen('tagui_global.csv','r') or die("ERROR - cannot open " . 'tagui_global.csv' . "\n");
-if ($repo_count != 0) $repo_count++; fgetcsv($global_repo_file); // +1 if array has data, discard header record
+if ($repo_count != 0) {$repo_count++; fgetcsv($global_repo_file);} // +1 if array has data, discard header record
 while (!feof($global_repo_file)) {$repo_data[$repo_count] = fgetcsv($global_repo_file);
 if (@count($repo_data[$repo_count]) == 0) die("ERROR - empty row found in " . 'tagui_global.csv' . "\n");
 if (@count($repo_data[$repo_count]) != 1) // pad the empty columns when global repository is used with datatable
@@ -566,9 +566,6 @@ $source_string = str_replace("+++","+",$source_string); $source_string = str_rep
 return $source_string;} // replacing multiple variations of + to handle user typos of double spaces etc 
 
 function get_text_for_sikuli($image_filename) { // helper function to decompose full path and filename to get text
-if (strlen($image_filename) <= 4) return $image_filename; // initial check to handle variables, and steps
-$filename_extension = strtolower(substr($image_filename, -4)); // without image input, for eg keyboard step
-if (($filename_extension != '.png') and ($filename_extension != '.bmp')) return $image_filename;
 $image_filename = substr($image_filename, 0, -4);
 $last_back_slash = strrpos($image_filename, "/");
 $last_forward_slash = strrpos($image_filename, "\\");
