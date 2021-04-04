@@ -4,6 +4,9 @@ rem # SCRIPT FOR RUNNING TAGUI FRAMEWORK ~ TEBEL.ORG #
 rem configure default command location to launch Chrome on Windows
 set chrome_command=C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 
+rem fallback in case newer Chrome is not installed in x86 folder
+if not exist "%chrome_command%" set chrome_command=C:\Program Files\Google\Chrome\Application\chrome.exe
+
 rem fallback to backup location for some users who cannot install Chrome system-wide
 if not exist "%chrome_command%" set chrome_command=%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe
 
@@ -11,7 +14,7 @@ rem enable windows for loop advanced flow control
 setlocal enableextensions enabledelayedexpansion
 
 if "%~1"=="" (
-echo tagui v5.15: use following options and this syntax to run - tagui flow_filename option^(s^)
+echo tagui v5.16: use following options and this syntax to run - tagui flow_filename option^(s^)
 echo.
 echo chrome   - run on visible Chrome web browser instead of invisible PhantomJS ^(first install Chrome^)
 echo headless - run on invisible Chrome web browser instead of default PhantomJS ^(first install Chrome^)
