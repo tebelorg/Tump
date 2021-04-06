@@ -599,6 +599,7 @@ if exist "tagui_chrome.in" (
 	set chrome_switches=--remote-debugging-port=9222 about:blank
 	if not exist "%chrome_command%" (
 		echo ERROR - cannot find Chrome at "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+		echo ERROR - or at another common folder "C:\Program Files\Google\Chrome\Application\chrome.exe"
 		echo ERROR - or at user folder "%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"
 		echo update chrome_command setting in tagui\src\tagui.cmd to your chrome.exe
 		exit /b 1
