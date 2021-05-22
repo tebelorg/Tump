@@ -14,7 +14,7 @@ rem enable windows for loop advanced flow control
 setlocal enableextensions enabledelayedexpansion
 
 if "%~1"=="" (
-echo tagui v5.17: use following options and this syntax to run - tagui flow_filename option^(s^)
+echo tagui v5.24: use following options and this syntax to run - tagui flow_filename option^(s^)
 echo.
 echo chrome   - run on visible Chrome web browser instead of invisible PhantomJS ^(first install Chrome^)
 echo headless - run on invisible Chrome web browser instead of default PhantomJS ^(first install Chrome^)
@@ -624,7 +624,7 @@ rem end of if block to start chrome processes
 
 rem check if test mode is enabled and run casperjs accordingly, before sending finish signal if integrations are active
 if %tagui_test_mode%==false (
-	casperjs "%flow_file%.js" %params%!api! | tee -a "%flow_file%.log"
+	casperjs \"%flow_file%.js\" %params%!api! | tee -a "%flow_file%.log"
 ) else (
 	casperjs test "%flow_file%.js" !api! --xunit="%flow_file%.xml" | tee -a "%flow_file%.log"
 )
