@@ -14,7 +14,7 @@ rem enable windows for loop advanced flow control
 setlocal enableextensions enabledelayedexpansion
 
 if "%~1"=="" (
-echo tagui v5.24: use following options and this syntax to run - tagui flow_filename option^(s^)
+echo tagui v5.26: use following options and this syntax to run - tagui flow_filename option^(s^)
 echo.
 echo chrome   - run on visible Chrome web browser instead of invisible PhantomJS ^(first install Chrome^)
 echo headless - run on invisible Chrome web browser instead of default PhantomJS ^(first install Chrome^)
@@ -541,7 +541,7 @@ if !tagui_data_set! neq 1 if %tagui_speed_mode%==false php -q sleep.php 3
 rem parse automation flow file, check for initial parse error
 rem check R, python, sikuli, chrome, before calling casperjs
 php -q tagui_parse.php "%flow_file%" | tee -a "%flow_file%.log"
-for /f "usebackq" %%f in ('%flow_file%.log') do set file_size=%%~zf
+for /f "usebackq delims=" %%f in ('%flow_file%.log') do set file_size=%%~zf
 if !file_size! gtr 0 (
 	if !tagui_data_set! equ 1 (
 		echo ERROR - automation aborted due to above | tee -a "%flow_file%.log"
@@ -559,18 +559,18 @@ if exist "%flow_file%.js" (
 
 rem start R process if integration file is created during parsing
 if exist "tagui_r\tagui_r.in" (
-        start /min cmd /c Rscript tagui_r\tagui_r.R 2^>^&1 ^| tee -a tagui_r\tagui_r.log
+        start "R Engine" /min cmd /c Rscript tagui_r\tagui_r.R 2^>^&1 ^| tee -a tagui_r\tagui_r.log
 )
 
 rem start python process if integration file is created during parsing
 if exist "tagui_py\tagui_py.in" (
-        start /min cmd /c python -u tagui_py\tagui_py.py 2^>^&1 ^| tee -a tagui_py\tagui_py.log
+        start "Python Engine" /min cmd /c python -u tagui_py\tagui_py.py 2^>^&1 ^| tee -a tagui_py\tagui_py.log
 )
 
 rem start sikuli process if integration file is created during parsing
 if exist "tagui.sikuli\tagui_sikuli.in" (
 	rem echo [starting sikuli process] | tee -a "%flow_file%.log"
-	start /min cmd /c java -jar sikulix\sikulix.jar -r tagui.sikuli -d 3 2^>^&1 ^| tee -a tagui.sikuli\tagui.log
+	start "SikuliX Engine" /min cmd /c java -jar sikulix\sikulix.jar -r tagui.sikuli -d 3 2^>^&1 ^| tee -a tagui.sikuli\tagui.log
 )
 
 rem start chrome processes if integration file is created during parsing
@@ -617,7 +617,7 @@ if exist "tagui_chrome.in" (
 	)
 
 	rem launch php process to manage chrome websocket communications
-	start /min cmd /c php -q tagui_chrome.php !ws_url! ^| tee -a tagui_chrome.log
+	start "Chrome Engine" /min cmd /c php -q tagui_chrome.php !ws_url! ^| tee -a tagui_chrome.log
 
 rem end of if block to start chrome processes
 )
@@ -659,7 +659,7 @@ gawk "sub(\"$\", \"\")" "tagui_py\tagui_py.log" > "tagui_py\tagui_py_windows.log
 gawk "sub(\"$\", \"\")" "tagui.sikuli\tagui.log" > "tagui.sikuli\tagui_windows.log"
 
 rem check report option to generate html automation log
-for /f "usebackq" %%f in ('%flow_file%.log') do set file_size=%%~zf
+for /f "usebackq delims=" %%f in ('%flow_file%.log') do set file_size=%%~zf
 if %file_size% gtr 0 if %tagui_html_report%==true (
 	php -q tagui_report.php "%flow_file%"
 	gawk "sub(\"$\", \"\")" "%flow_file%.html" > "%flow_file%.html.tmp"
@@ -667,7 +667,7 @@ if %file_size% gtr 0 if %tagui_html_report%==true (
 )
 
 rem check upload option to upload result to hastebin.com
-for /f "usebackq" %%f in ('%flow_file%.log') do set file_size=%%~zf
+for /f "usebackq delims=" %%f in ('%flow_file%.log') do set file_size=%%~zf
 if %file_size% gtr 0 if %tagui_upload_result%==true (
 rem set flow_file to blank or the variable will break that tagui call
 	set "tmp_flow_file=%flow_file%"
