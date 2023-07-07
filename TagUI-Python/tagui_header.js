@@ -507,8 +507,8 @@ else return {x: 0, y: 0};}} catch(e) {return {x: 0, y: 0};}};
 chrome.getRect = function(selector) { // helper function to get rectangle boundary coordinates of selector
 if ((selector.toString().length >= 16) && (selector.toString().substr(0,16) == 'xpath selector: '))
 {if (selector.toString().length == 16) selector = ''; else selector = selector.toString().substring(16);
-var ws_message = chrome_step('Runtime.evaluate',{expression: 'var result_bounds = document.evaluate(\''+selector+'\','+chrome_context+',null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null).snapshotItem(0).getBoundingClientRect(); var result_rect = {top: Math.round(result_bounds.top), left: Math.round(result_bounds.left), width: Math.round(result_bounds.width), height: Math.round(result_bounds.height)}; result_rect', returnByValue: true});}
-else var ws_message = chrome_step('Runtime.evaluate',{expression: 'var result_bounds = '+chrome_context+'.querySelector(\''+selector+'\').getBoundingClientRect(); var result_rect = {top: Math.round(result_bounds.top), left: Math.round(result_bounds.left), width: Math.round(result_bounds.width), height: Math.round(result_bounds.height)}; result_rect', returnByValue: true}); try {var ws_json = JSON.parse(ws_message); // check if width and height are valid before returning coordinates
+var ws_message = chrome_step('Runtime.evaluate',{expression: 'var result_bounds = document.evaluate(\''+selector+'\','+chrome_context+',null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null).snapshotItem(0).getBoundingClientRect(); var result_rect = {top: Math.round(result_bounds.top + window.scrollY), left: Math.round(result_bounds.left + window.scrollX), width: Math.round(result_bounds.width), height: Math.round(result_bounds.height)}; result_rect', returnByValue: true});}
+else var ws_message = chrome_step('Runtime.evaluate',{expression: 'var result_bounds = '+chrome_context+'.querySelector(\''+selector+'\').getBoundingClientRect(); var result_rect = {top: Math.round(result_bounds.top + window.scrollY), left: Math.round(result_bounds.left + window.scrollX), width: Math.round(result_bounds.width), height: Math.round(result_bounds.height)}; result_rect', returnByValue: true}); try {var ws_json = JSON.parse(ws_message); // check if width and height are valid before returning coordinates
 if (ws_json.result.result.value.width > 0 && ws_json.result.result.value.height > 0)
 {if (chrome_context !== 'document') {ws_json.result.result.value.left += frame_step_offset_x; // add offset if in frame
 ws_json.result.result.value.top += frame_step_offset_y;}; return ws_json.result.result.value;} else
@@ -608,6 +608,7 @@ casper.thenOpen(file_url(filename), function() {casper . capture(filename, // sp
 casper.thenOpen('about:blank');});}; // reset phantomjs browser state */
 
 chrome.captureSelector = function(filename,selector) { // capture screenshot of selector to png/jpg/jpeg format
+chrome.scrollIntoViewIfNeeded(selector); // adjust to work for new Chromium behaviour and with absolute xy
 var selector_rect = chrome.getRect(selector); if (selector_rect.width > 0 && selector_rect.height > 0)
 {var format = 'png'; var quality = 80; var fromSurface = true; var screenshot_data = ''; // options not implemented
 if ((filename.substr(-3).toLowerCase() == 'jpg') || (filename.substr(-4).toLowerCase() == 'jpeg')) format = 'jpeg';
@@ -652,6 +653,7 @@ var new_context = ''; if (chrome_context == 'document') new_context = 'mainframe
 else if (chrome_context == 'mainframe_context') new_context = 'subframe_context'; // below backup original offset
 original_frame_step_offset_x = frame_step_offset_x; original_frame_step_offset_y = frame_step_offset_y;
 casper.then(function _step() { // track frame (x,y) offset so that steps within frame work correctly
+chrome.scrollIntoViewIfNeeded(xps666('(//frame|//iframe)[@name="'+frameInfo+'" or @id="'+frameInfo+'"]'));
 var frame_rect = chrome.getRect(xps666('(//frame|//iframe)[@name="'+frameInfo+'" or @id="'+frameInfo+'"]'));
 frame_step_offset_x = frame_rect.left; frame_step_offset_y = frame_rect.top; // set offset before entering frame
 chrome_step('Runtime.evaluate',{expression: new_context+' = document.evaluate(\'(//frame|//iframe)[@name="'+frameInfo+'" or @id="'+frameInfo+'"]\','+chrome_context+',null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null).snapshotItem(0).contentDocument'}); chrome_context = new_context;}); // set mainframe_context/subframe_context in dom
